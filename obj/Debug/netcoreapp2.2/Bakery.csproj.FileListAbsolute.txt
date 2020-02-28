@@ -1,0 +1,4 @@
+/Users/patrickdelaney/Desktop/EpicodusProject/obj/Debug/netcoreapp2.2/Bakery.csprojAssemblyReference.cache
+/Users/patrickdelaney/Desktop/EpicodusProject/obj/Debug/netcoreapp2.2/Bakery.csproj.CoreCompileInputs.cache
+/Users/patrickdelaney/Desktop/EpicodusProject/obj/Debug/netcoreapp2.2/Bakery.AssemblyInfoInputs.cache
+/Users/patrickdelaney/Desktop/EpicodusProject/obj/Debug/netcoreapp2.2/Bakery.AssemblyInfo.cs
