@@ -2,16 +2,29 @@ using System;
 using System.Collections.Generic;
 
 namespace Bakery.Models {
-  private class Bread
+  public class Bread
   {
-    private int Cost{get; set;}
-    private int Quantity{get; set;}
+    public int Cost{get; set;}
+    public int Quantity{get; set;}
 
-    private Bread(int cost, int quantity)
+    public Bread(int cost, int quantity)
     {
       Cost = cost;
       Quantity = quantity;
     }
-    
+    public void BuyBread(int quantity, int cost)
+    {
+      if (quantity == 1)
+      {
+        cost += 5;
+      }
+      for(int i = 1; i <= quantity; i++)
+      {
+        if (i % 3 == 0)
+        {
+          cost +=10;
+        }
+      }
+    }
   }
 }
