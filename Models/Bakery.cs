@@ -59,7 +59,23 @@ namespace Bakery.Models {
           }
         }
       }
-      Console.WriteLine("Wonderful! That will be $" + cost + " dollars!");
+      Console.WriteLine("`Excellent! That will be $" + cost + " dollars!`");
+    }
+  }
+  public class Journey
+  {
+    public string Name{get; set;}
+
+    public Journey(string name)
+    {
+      Name = name;
+    }
+    public void BeginJourney()
+    {
+      Console.WriteLine("You are now presented with a choise:");
+      Console.WriteLine("*Take the food and run* (run)");
+      Console.WriteLine("*Pay Pierre the baker for the food* (pay)");
+      
     }
   }
 }
