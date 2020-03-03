@@ -29,6 +29,7 @@ class Program
       int cost = 0;
       Pastry newPastry = new Pastry(cost, desiredQuantity);
       newPastry.BuyPastry(desiredQuantity, cost);
+      
     }
   }
 }

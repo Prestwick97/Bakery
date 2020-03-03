@@ -60,22 +60,31 @@ namespace Bakery.Models {
         }
       }
       Console.WriteLine("`Excellent! That will be $" + cost + " dollars!`");
-    }
-  }
-  public class Journey
-  {
-    public string Name{get; set;}
-
-    public Journey(string name)
-    {
-      Name = name;
+      BeginJourney();
     }
     public void BeginJourney()
     {
-      Console.WriteLine("You are now presented with a choise:");
-      Console.WriteLine("*Take the food and run* (run)");
-      Console.WriteLine("*Pay Pierre the baker for the food* (pay)");
-      
+      Console.WriteLine("** You are now presented with a choice:");
+      Console.WriteLine("* Take the food and run * (run)");
+      Console.WriteLine("* Pay Pierre the baker for the food * (pay)");
+      string runPay = Console.ReadLine();
+      if(runPay == "run")
+      {
+        Run();
+      }
+    }
+    public void Run()
+    {
+      Console.WriteLine("*As you run to the door, you find that it's locked.*");
+      Console.WriteLine("*You hear deviant laughter behind you.*");
+      Console.WriteLine("** You are now presented with a choice: ");
+      Console.WriteLine("* The door is glass, you may be able to break it if you try * (break");
+      Console.WriteLine("* Turn around and confront Pierre (confront) *");
+      string breakConfront = Console.ReadLine();
+      if(breakConfront == "break")
+      {
+        Console.WriteLine("Your hands are full of baked good - you slam into the glass door with your elbow, completely shattering the door.");
+      }
     }
   }
 }

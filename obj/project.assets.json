@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/patrickdelaney/Desktop/EpicodusProject/Bakery.csproj",
+      "projectUniqueName": "/Users/patrickdelaney/Desktop/BakeryPierre/Bakery.csproj",
       "projectName": "Bakery",
-      "projectPath": "/Users/patrickdelaney/Desktop/EpicodusProject/Bakery.csproj",
+      "projectPath": "/Users/patrickdelaney/Desktop/BakeryPierre/Bakery.csproj",
       "packagesPath": "/Users/patrickdelaney/.nuget/packages/",
-      "outputPath": "/Users/patrickdelaney/Desktop/EpicodusProject/obj/",
+      "outputPath": "/Users/patrickdelaney/Desktop/BakeryPierre/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
