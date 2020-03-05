@@ -29,24 +29,25 @@ namespace Bakery.Models {
           }
         }
       }
-      Console.WriteLine("Wonderful! That will be $" + cost + " dollars!");
+      Console.WriteLine("Pierre: `Wonderful! That will be $" + cost + " dollars!`");
       BeginQuest();
     }
     public void BeginQuest()
     {
       Console.WriteLine("* As you feel for your wallet, you realize you don't have any money. *");
+      Console.WriteLine("------------------------------------------------");
       Console.WriteLine("** You are now presented with a choice:");
-      Console.WriteLine("* Take the food and run * (run)");
-      Console.WriteLine("* Pay Pierre the baker for the food * (pay)");
-      string runPay = Console.ReadLine();
-      if(runPay == "run")
+      Console.WriteLine("* Eat all the food you have in your hands as fast as you can. * (eat)");
+      Console.WriteLine("* Confess to Pierre that you have no money. (confess)*");
+      string eatConf = Console.ReadLine();
+      if(eatConf == "eat")
       {
-        Run();
+        Eat();
       }
       else
       {
-        Console.WriteLine("* You pay Pierre the money you owe him. *");
-        Console.WriteLine("`Thank you very much! You are a wonderful Customer! Please, come again. :-)");
+        Console.WriteLine("* You confess to Pierre that you have no money to pay him. *");
+        Console.WriteLine("Pierre: `Oh do not worry, my friend! Your honestly will take you far in life. Take the goods, on the house. ;)");
       }
     }
   }
@@ -77,7 +78,7 @@ namespace Bakery.Models {
           }
         }
       }
-      Console.WriteLine("`Excellent! That will be $" + cost + " dollars!`");
+      Console.WriteLine("Pierre: `Excellent! That will be $" + cost + " dollars!`");
       BeginJourney();
     }
     public void BeginJourney()
@@ -93,7 +94,7 @@ namespace Bakery.Models {
       else
       {
         Console.WriteLine("* You pay Pierre the money you owe him. *");
-        Console.WriteLine("`Thank you very much! You are a wonderful Customer! Please, come again. :-)");
+        Console.WriteLine("Pierre: `Thank you very much! You are a wonderful Customer! Please, come again. :-)");
       }
     }
     public void Run()
@@ -106,7 +107,7 @@ namespace Bakery.Models {
       string breakConfront = Console.ReadLine();
       if(breakConfront == "break")
       {
-        Console.WriteLine("Your hands are full of baked good - you slam into the glass door with your elbow, completely shattering the door.");
+        Console.WriteLine("Your hands are full of baked goods - you slam into the glass door with your elbow, completely shattering the door.");
       }
     }
   }
