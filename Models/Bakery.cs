@@ -47,8 +47,16 @@ namespace Bakery.Models {
       else
       {
         Console.WriteLine("* You confess to Pierre that you have no money to pay him. *");
-        Console.WriteLine("Pierre: `Oh do not worry, my friend! Your honestly will take you far in life. Take the goods, on the house. ;)");
+        Console.WriteLine("Pierre: `Oh do not worry, my friend! Your honestly will take you far in life. Take the goods, on the house.`");
       }
+    }
+    public void Eat()
+    {
+      Console.WriteLine("* You scarf down as much of your baked goods as you can. *");
+      Console.WriteLine("------------------------------------------------");
+      Console.WriteLine("* Your mouth full of bread, you look up at Pierre to see a monstrous grin. *");
+      Console.WriteLine("Pierre: `well, aren't you the resourceful one.`");
+      Console.WriteLine("* Several goons come out from behind the counter and pull you aside. They put you in a wooden crate. Everything is black. *");
     }
   }
 
@@ -84,6 +92,7 @@ namespace Bakery.Models {
     public void BeginJourney()
     {
       Console.WriteLine("** You are now presented with a choice:");
+      Console.WriteLine("------------------------------------------------");
       Console.WriteLine("* Take the food and run * (run)");
       Console.WriteLine("* Pay Pierre the baker for the food * (pay)");
       string runPay = Console.ReadLine();
