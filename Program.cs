@@ -10,7 +10,7 @@ class Program
     Console.WriteLine("`At the moment, we have a special sale!`");
     Console.WriteLine("`Bread: Only $5 a loaf, but if you buy two, you get one free!`");
     Console.WriteLine("`Pastry: Only $2 a piece, but if you buy three, you get a dollar off!`");
-    Console.WriteLine("`Would you like to buy bread, or pastry? (bread/pastry)`");
+    Console.WriteLine("`So. Bread, or pastry? The choice is yours. (bread/pastry)`");
     string decision = Console.ReadLine();
     if (decision == "bread")
     {

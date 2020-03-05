@@ -30,6 +30,24 @@ namespace Bakery.Models {
         }
       }
       Console.WriteLine("Wonderful! That will be $" + cost + " dollars!");
+      BeginQuest();
+    }
+    public void BeginQuest()
+    {
+      Console.WriteLine("* As you feel for your wallet, you realize you don't have any money. *");
+      Console.WriteLine("** You are now presented with a choice:");
+      Console.WriteLine("* Take the food and run * (run)");
+      Console.WriteLine("* Pay Pierre the baker for the food * (pay)");
+      string runPay = Console.ReadLine();
+      if(runPay == "run")
+      {
+        Run();
+      }
+      else
+      {
+        Console.WriteLine("* You pay Pierre the money you owe him. *");
+        Console.WriteLine("`Thank you very much! You are a wonderful Customer! Please, come again. :-)");
+      }
     }
   }
 
@@ -71,6 +89,11 @@ namespace Bakery.Models {
       if(runPay == "run")
       {
         Run();
+      }
+      else
+      {
+        Console.WriteLine("* You pay Pierre the money you owe him. *");
+        Console.WriteLine("`Thank you very much! You are a wonderful Customer! Please, come again. :-)");
       }
     }
     public void Run()
